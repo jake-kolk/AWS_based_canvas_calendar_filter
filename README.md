@@ -8,3 +8,4 @@ It is not set up to retain all assignment info, just due date, assignment title,
    - In the  gateway, you need to set the rout to GET /assignments  
    - You need to set timeout to at least 5 seconds (I did 30s)  
    - Set the integration to your lambda
+   -The link to enter into your calendar will be something like "https://[API_ID].execute-api.us-east-2.amazonaws.com/prod/assignments.ics"
