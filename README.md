@@ -4,7 +4,8 @@ lecture to the calendar as an event. This really clougs up my calendar so I made
 It is not set up to retain all assignment info, just due date, assignment title, and class. So if your looking to preserve more of that data, you will need to modify the code to include that.
 ### How to set up:  
 1. Set up a lambda in AWS using lambda.py
-2. Set up API Gateway  
+   - You probably need to install the dependancies locally and upload a zip file
+3. Set up API Gateway  
    - In the  gateway, you need to set the rout to GET /assignments  
    - You need to set timeout to at least 5 seconds (I did 30s)  
    - Set the integration to your lambda  
