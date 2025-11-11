@@ -80,8 +80,11 @@ def lambda_handler(event, context):
         return {
             "statusCode": 200,
             "headers": {
-                "Content-Type": "text/calendar",
-                "Content-Disposition": "inline; filename=assignments.ics"
+                "Content-Type": "text/calendar; charset=utf-8",
+                "Content-Disposition": "inline; filename=assignments.ics",
+                "Cache-Control": "no-cache, no-store, must-revalidate",
+                "Pragma": "no-cache",
+                "Expires": "0"
             },
             "body": ics_data
         }
